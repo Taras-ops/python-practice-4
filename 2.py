@@ -1,4 +1,8 @@
 def checkWordOrder(word, symbol, nextSymbol):
+    if len(symbol) != 1 or len(nextSymbol) != 1:
+        print('You should enter only a symbol')
+        return False
+
     if symbol not in word or nextSymbol not in word:
         return False
 
