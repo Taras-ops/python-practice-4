@@ -24,6 +24,8 @@ def formatDate():
         return invalid_date_error_message
     if len(arr[1]) != 2:
         return invalid_date_error_message
+    if len(arr[0]) > 2:
+        return invalid_date_error_message
     elif not arr[0].isdigit() or not arr[1].isdigit() or not arr[2].isdigit():
         return invalid_date_error_message
     elif int(arr[1]) > 12:
